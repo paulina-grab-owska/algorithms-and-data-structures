@@ -93,7 +93,7 @@ int main() {
     
     //pobieranie danych z pliku
     fstream file;
-    file.open("chess.txt", ios::in);
+    file.open("list_project_chess.txt", ios::in);
     string line;  
     
     if(!file.is_open()){ cout << "no data found" << endl; exit(0); }
