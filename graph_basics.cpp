@@ -11,7 +11,7 @@ using namespace std;
 void macierz() {
     int** macierzz;
 
-    fstream file("graf.txt");
+    fstream file("graph.txt");
 
     if (!file.is_open()) {
         cout << "nie można otworzyć pliku." << endl;
@@ -51,7 +51,7 @@ void macierz() {
 
 //----------------------------MACIERZ --> LISTA SĄSIEDZCTWA--------------------------------------
 void macierz_do_listaS() {
-    fstream file("graf.txt");
+    fstream file("graph.txt");
 
     if (!file.is_open()) {
         cout << "nie można otworzyć pliku." << endl;
@@ -146,7 +146,7 @@ void listaS_do_listaK() {
 
 //---------------------LISTA KRAWĘDZI --> LISTA SĄSIEDZCTWA---------------------------------
 vector<Krawedz> macierz_do_listaK() {
-    ifstream file("graf.txt");
+    ifstream file("graph.txt");
 
     if (!file.is_open()) {
         cout << "nie można otworzyć pliku." << endl;
